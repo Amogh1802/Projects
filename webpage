@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rover Control Board</title>
+  <link rel="stylesheet" href="Web.css" />
+  <script src="Web.js" defer></script>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Camera Stream Display -->
+    <div class="camera-feed">
+      <img src="http://<raspberrypi-ip>:<port>/stream" alt="Rover Camera Feed" />
+    </div>
+
+    <!-- Controls Section -->
+    <div class="top-section">
+      <!-- Left Buttons -->
+      <div class="button-group">
+        <button class="top">W</button>
+        <button class="bottom-left">A</button>
+        <button class="bottom-middle">S</button>
+        <button class="bottom-right">D</button>
+      </div>
+
+      <!-- Right Buttons -->
+      <div>
+        <div class="horizontal-group">
+          <button>Q</button>
+          <button>E</button>
+        </div>
+        <div class="horizontal-group">
+          <button>Z</button>
+          <button>X</button>
+        </div>
+        <button class="large-button">STOP</button>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
